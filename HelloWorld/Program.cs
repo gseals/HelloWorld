@@ -19,7 +19,7 @@ namespace HelloWorld
                         Console.WriteLine("Howdy Y'all!!");
                         break;
                     case "northern":
-                        Console.WriteLine("Hey yous or some shit like that");
+                        Console.WriteLine("Hey yous");
                         break;
                     case "pirate":
                         Console.WriteLine("Arg?");
