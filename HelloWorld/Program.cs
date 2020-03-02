@@ -9,13 +9,16 @@ namespace HelloWorld
 
             if (args.Length == 0)
             {
-                Console.WriteLine("Please enter a dialect: Southern, Northern, Pirate.");
+                Console.WriteLine("Please enter a dialect: Australian, Southern, Northern, Pirate.");
                 var dialect = Console.ReadLine(); // What happens if you run the app without this line?
                 
                 switch (dialect.ToLower())
 
 
                 {
+                    case "australian":
+                        Console.WriteLine("G'day!");
+                        break;
                     case "southern":
                         Console.WriteLine("Howdy Y'all!!");
                         break;
@@ -41,7 +44,7 @@ namespace HelloWorld
 
             var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan", "Dog", "Cat" };
             var randomAnimal = animals[randomNumber];
-            Console.WriteLine($"{colorChoice} is an excellent choice. Would you like a {colorChoice} {randomAnimal}?");
+            Console.WriteLine($"{colorChoice} is an excellent choice. Would you like to have a {colorChoice} {randomAnimal}?");
             Console.ReadLine();
 
             foreach (var animal in animals)
