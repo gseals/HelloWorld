@@ -6,6 +6,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+
             if (args.Length == 0)
             {
                 Console.WriteLine("Please enter a dialect: Southern, Northern, Pirate.");
@@ -29,11 +30,19 @@ namespace HelloWorld
                         break;
                 }
             }
+            Console.ReadLine();
+            Console.WriteLine("What is your name?");
+            var name = Console.ReadLine();
+            Console.WriteLine($"Welcome to the animal section, {name}. What's your favorite color?");
+            string colorChoice = Console.ReadLine();
 
-
-
+            Random rnd = new Random();
+            int randomNumber = rnd.Next(0, 5);
 
             var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan", "Dog", "Cat" };
+            var randomAnimal = animals[randomNumber];
+            Console.WriteLine($"{colorChoice} is an excellent choice. Would you like a {colorChoice} {randomAnimal}?");
+            Console.ReadLine();
 
             foreach (var animal in animals)
             {
